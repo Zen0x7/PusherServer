@@ -1,11 +1,11 @@
 #include <fmt/format.h>
-#include <greeter/greeter.h>
+#include <pusher/pusher.h>
 
-using namespace greeter;
+using namespace pusher;
 
-Greeter::Greeter(std::string _name) : name(std::move(_name)) {}
+Pusher::Pusher(std::string _name) : name(std::move(_name)) {}
 
-std::string Greeter::greet(LanguageCode lang) const {
+std::string Pusher::greet(LanguageCode lang) const {
   switch (lang) {
     default:
     case LanguageCode::EN:
